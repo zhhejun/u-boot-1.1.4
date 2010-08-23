@@ -1,1734 +1,1873 @@
-# 1 "/work/u-boot-1.1.4/drivers//"
-3c589.o: 3c589.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+3c589.o: 3c589.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/command.h /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h
-# 1 "/work/u-boot-1.1.4/drivers//"
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/command.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
 5701rls.o: 5701rls.c
-# 1 "/work/u-boot-1.1.4/drivers//"
-ali512x.o: ali512x.c /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-bcm570x.o: bcm570x.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+ali512x.o: ali512x.c /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+bcm570x.o: bcm570x.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
 bcm570x_autoneg.o: bcm570x_autoneg.c
-# 1 "/work/u-boot-1.1.4/drivers//"
-cfb_console.o: cfb_console.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+cfb_console.o: cfb_console.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-cfi_flash.o: cfi_flash.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+cfi_flash.o: cfi_flash.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/asm/processor.h \
-  /work/u-boot-1.1.4/include/asm/atomic.h \
-  /work/u-boot-1.1.4/include/asm/proc/system.h \
-  /work/u-boot-1.1.4/include/asm/proc/processor.h \
-  /work/u-boot-1.1.4/include/asm/proc/domain.h \
-  /work/u-boot-1.1.4/include/asm/io.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/asm/memory.h \
-  /work/u-boot-1.1.4/include/environment.h \
-  /work/u-boot-1.1.4/include/watchdog.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-cs8900.o: cs8900.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/processor.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/atomic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/system.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/processor.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/domain.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/io.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/memory.h \
+  /work/hi3511/u-boot-1.1.4/include/environment.h \
+  /work/hi3511/u-boot-1.1.4/include/watchdog.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+cs8900.o: cs8900.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/command.h cs8900.h \
-  /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-ct69000.o: ct69000.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/command.h cs8900.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+ct69000.o: ct69000.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-dataflash.o: dataflash.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+dataflash.o: dataflash.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-dc2114x.o: dc2114x.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+dc2114x.o: dc2114x.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-dm9000x.o: dm9000x.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+dm9000x.o: dm9000x.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/command.h /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/asm/io.h \
-  /work/u-boot-1.1.4/include/asm/memory.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-e1000.o: e1000.c e1000.h /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/command.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/io.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/memory.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+e1000.o: e1000.c e1000.h /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/malloc.h /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/asm/io.h \
-  /work/u-boot-1.1.4/include/asm/memory.h \
-  /work/u-boot-1.1.4/include/pci.h /work/u-boot-1.1.4/include/pci_ids.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-eepro100.o: eepro100.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/malloc.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/io.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/memory.h \
+  /work/hi3511/u-boot-1.1.4/include/pci.h \
+  /work/hi3511/u-boot-1.1.4/include/pci_ids.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+eepro100.o: eepro100.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/malloc.h /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/asm/io.h \
-  /work/u-boot-1.1.4/include/asm/memory.h \
-  /work/u-boot-1.1.4/include/pci.h /work/u-boot-1.1.4/include/pci_ids.h \
-  /work/u-boot-1.1.4/include/miiphy.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-i8042.o: i8042.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/malloc.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/io.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/memory.h \
+  /work/hi3511/u-boot-1.1.4/include/pci.h \
+  /work/hi3511/u-boot-1.1.4/include/pci_ids.h \
+  /work/hi3511/u-boot-1.1.4/include/miiphy.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+i8042.o: i8042.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-i82365.o: i82365.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+i82365.o: i82365.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-inca-ip_sw.o: inca-ip_sw.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+inca-ip_sw.o: inca-ip_sw.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-keyboard.o: keyboard.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+keyboard.o: keyboard.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-lan91c96.o: lan91c96.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+lan91c96.o: lan91c96.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/command.h lan91c96.h \
-  /work/u-boot-1.1.4/include/asm/io.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/asm/memory.h \
-  /work/u-boot-1.1.4/include/net.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-natsemi.o: natsemi.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/command.h lan91c96.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/io.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/memory.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+natsemi.o: natsemi.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/malloc.h /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/asm/io.h \
-  /work/u-boot-1.1.4/include/asm/memory.h \
-  /work/u-boot-1.1.4/include/pci.h /work/u-boot-1.1.4/include/pci_ids.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-ne2000.o: ne2000.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/malloc.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/io.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/memory.h \
+  /work/hi3511/u-boot-1.1.4/include/pci.h \
+  /work/hi3511/u-boot-1.1.4/include/pci_ids.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+ne2000.o: ne2000.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/command.h /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/malloc.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-netarm_eth.o: netarm_eth.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/command.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/malloc.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+netarm_eth.o: netarm_eth.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-netconsole.o: netconsole.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+netconsole.o: netconsole.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-ns16550.o: ns16550.c /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-ns8382x.o: ns8382x.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+ns16550.o: ns16550.c /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+ns8382x.o: ns8382x.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/malloc.h /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/asm/io.h \
-  /work/u-boot-1.1.4/include/asm/memory.h \
-  /work/u-boot-1.1.4/include/pci.h /work/u-boot-1.1.4/include/pci_ids.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-ns87308.o: ns87308.c /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-ns7520_eth.o: ns7520_eth.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/malloc.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/io.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/memory.h \
+  /work/hi3511/u-boot-1.1.4/include/pci.h \
+  /work/hi3511/u-boot-1.1.4/include/pci_ids.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+ns87308.o: ns87308.c /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+ns7520_eth.o: ns7520_eth.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-omap1510_i2c.o: omap1510_i2c.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+omap1510_i2c.o: omap1510_i2c.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-omap24xx_i2c.o: omap24xx_i2c.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+omap24xx_i2c.o: omap24xx_i2c.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-pci.o: pci.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+pci.o: pci.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-pci_auto.o: pci_auto.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+pci_auto.o: pci_auto.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-pci_indirect.o: pci_indirect.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+pci_indirect.o: pci_indirect.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-pcnet.o: pcnet.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+pcnet.o: pcnet.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/malloc.h /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/asm/io.h \
-  /work/u-boot-1.1.4/include/asm/memory.h \
-  /work/u-boot-1.1.4/include/pci.h /work/u-boot-1.1.4/include/pci_ids.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-plb2800_eth.o: plb2800_eth.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/malloc.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/io.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/memory.h \
+  /work/hi3511/u-boot-1.1.4/include/pci.h \
+  /work/hi3511/u-boot-1.1.4/include/pci_ids.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+plb2800_eth.o: plb2800_eth.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-ps2ser.o: ps2ser.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+ps2ser.o: ps2ser.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-ps2mult.o: ps2mult.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+ps2mult.o: ps2mult.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-pc_keyb.o: pc_keyb.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+pc_keyb.o: pc_keyb.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-rtl8019.o: rtl8019.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+rtl8019.o: rtl8019.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/command.h rtl8019.h \
-  /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-rtl8139.o: rtl8139.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/command.h rtl8019.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+rtl8139.o: rtl8139.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/malloc.h /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/asm/io.h \
-  /work/u-boot-1.1.4/include/asm/memory.h \
-  /work/u-boot-1.1.4/include/pci.h /work/u-boot-1.1.4/include/pci_ids.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-rtl8169.o: rtl8169.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/malloc.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/io.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/memory.h \
+  /work/hi3511/u-boot-1.1.4/include/pci.h \
+  /work/hi3511/u-boot-1.1.4/include/pci_ids.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+rtl8169.o: rtl8169.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/malloc.h /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/asm/io.h \
-  /work/u-boot-1.1.4/include/asm/memory.h \
-  /work/u-boot-1.1.4/include/pci.h /work/u-boot-1.1.4/include/pci_ids.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-s3c4510b_eth.o: s3c4510b_eth.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/malloc.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/io.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/memory.h \
+  /work/hi3511/u-boot-1.1.4/include/pci.h \
+  /work/hi3511/u-boot-1.1.4/include/pci_ids.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+s3c4510b_eth.o: s3c4510b_eth.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-s3c4510b_uart.o: s3c4510b_uart.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+s3c4510b_uart.o: s3c4510b_uart.c \
+  /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-sed13806.o: sed13806.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+sed13806.o: sed13806.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-sed156x.o: sed156x.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+sed156x.o: sed156x.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/watchdog.h \
-  /work/u-boot-1.1.4/include/sed156x.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-serial.o: serial.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/watchdog.h \
+  /work/hi3511/u-boot-1.1.4/include/sed156x.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+serial.o: serial.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-serial_max3100.o: serial_max3100.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+serial_max3100.o: serial_max3100.c \
+  /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/watchdog.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-serial_pl010.o: serial_pl010.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/watchdog.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+serial_pl010.o: serial_pl010.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-serial_pl011.o: serial_pl011.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+serial_pl011.o: serial_pl011.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/watchdog.h serial_pl011.h
-# 1 "/work/u-boot-1.1.4/drivers//"
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/watchdog.h serial_pl011.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
 serial_xuartlite.o: serial_xuartlite.c \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-sl811_usb.o: sl811_usb.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+sl811_usb.o: sl811_usb.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-sm501.o: sm501.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+sm501.o: sm501.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-smc91111.o: smc91111.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+smc91111.o: smc91111.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/command.h smc91111.h \
-  /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-smiLynxEM.o: smiLynxEM.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/command.h smc91111.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+smiLynxEM.o: smiLynxEM.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-status_led.o: status_led.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+status_led.o: status_led.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/status_led.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-sym53c8xx.o: sym53c8xx.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/status_led.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+sym53c8xx.o: sym53c8xx.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-ti_pci1410a.o: ti_pci1410a.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+ti_pci1410a.o: ti_pci1410a.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/command.h /work/u-boot-1.1.4/include/pci.h \
-  /work/u-boot-1.1.4/include/pci_ids.h \
-  /work/u-boot-1.1.4/include/asm/io.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/asm/memory.h \
-  /work/u-boot-1.1.4/include/pcmcia.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-tigon3.o: tigon3.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/command.h \
+  /work/hi3511/u-boot-1.1.4/include/pci.h \
+  /work/hi3511/u-boot-1.1.4/include/pci_ids.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/io.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/memory.h \
+  /work/hi3511/u-boot-1.1.4/include/pcmcia.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+tigon3.o: tigon3.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-tsec.o: tsec.c /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/mpc85xx.h \
-  /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+tsec.o: tsec.c /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/mpc85xx.h \
+  /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/malloc.h /work/u-boot-1.1.4/include/net.h \
-  /work/u-boot-1.1.4/include/asm/byteorder.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
-  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
-  /work/u-boot-1.1.4/include/command.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-usbdcore.o: usbdcore.c /work/u-boot-1.1.4/include/malloc.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/usbdcore.h \
-  /work/u-boot-1.1.4/include/common.h /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/malloc.h \
+  /work/hi3511/u-boot-1.1.4/include/net.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/hi3511/u-boot-1.1.4/include/command.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+usbdcore.o: usbdcore.c /work/hi3511/u-boot-1.1.4/include/malloc.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/usbdcore.h \
+  /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
-  /work/u-boot-1.1.4/include/usbdescriptors.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-usbdcore_ep0.o: usbdcore_ep0.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/hi3511/u-boot-1.1.4/include/usbdescriptors.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+usbdcore_ep0.o: usbdcore_ep0.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
 usbdcore_omap1510.o: usbdcore_omap1510.c \
-  /work/u-boot-1.1.4/include/common.h /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-usbtty.o: usbtty.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+usbtty.o: usbtty.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-videomodes.o: videomodes.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+videomodes.o: videomodes.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h videomodes.h
-# 1 "/work/u-boot-1.1.4/drivers//"
-w83c553f.o: w83c553f.c /work/u-boot-1.1.4/include/common.h \
-  /work/u-boot-1.1.4/include/config.h \
-  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/u-boot-1.1.4/include/linux/bitops.h \
-  /work/u-boot-1.1.4/include/asm/bitops.h \
-  /work/u-boot-1.1.4/include/linux/types.h \
-  /work/u-boot-1.1.4/include/linux/config.h \
-  /work/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/u-boot-1.1.4/include/linux/stddef.h \
-  /work/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/u-boot-1.1.4/include/asm/types.h \
-  /work/u-boot-1.1.4/include/linux/string.h \
-  /work/u-boot-1.1.4/include/asm/string.h \
-  /work/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h videomodes.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
+w83c553f.o: w83c553f.c /work/hi3511/u-boot-1.1.4/include/common.h \
+  /work/hi3511/u-boot-1.1.4/include/config.h \
+  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
   /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
-  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
-  /work/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/u-boot-1.1.4/include/asm/global_data.h \
-  /work/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/u-boot-1.1.4/include/asm/setup.h \
-  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
-# 1 "/work/u-boot-1.1.4/drivers//"
+  /work/hi3511/u-boot-1.1.4/include/part.h \
+  /work/hi3511/u-boot-1.1.4/include/ide.h \
+  /work/hi3511/u-boot-1.1.4/include/flash.h \
+  /work/hi3511/u-boot-1.1.4/include/image.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/hi3511/u-boot-1.1.4/drivers//"
 ks8695eth.o: ks8695eth.c
