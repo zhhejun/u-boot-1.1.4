@@ -1,0 +1,3 @@
+---- REG_SC_PEREN Æ¥Åä (2 in 2 ÎÄ¼þ) ----
+Lowlevel_init.c (cpu\hi3511v100):	__raw_writel(REG_CONF_SC_PERCLKEN, base + REG_SC_PEREN);
+Platform.h (include\asm-arm\arch-hi3511v100):#define REG_SC_PEREN	                0x024

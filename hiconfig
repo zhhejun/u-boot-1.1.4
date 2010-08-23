@@ -1,0 +1,70 @@
+#!/bin/sh -e
+
+#
+# (C) Copyright 2006, Hisilicon Corp.
+# 
+#
+# See file CREDITS for list of people who contributed to this
+# project.
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation; either version 2 of
+# the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+# MA 02111-1307 USA
+#
+
+echo "Hisilicon Bootloader Configure 1.0.0"
+echo "Select your board bellow:"
+
+BOARD_NUM=0
+CONFIG=
+TMP=
+
+while read line
+do
+	config_name=`echo $line | sed -n 's/_config:[ \t]*unconfig[ \t]*$//p'`
+	[ -z "$config_name" ] && { 
+		TMP=`echo $line | grep "^#!help: " | sed -n "s/^#!help: //p"`
+		[ -z "$TMP" ] && continue; 
+		help_info="$TMP"
+		continue
+		}
+
+	BOARD_NUM=`expr $BOARD_NUM + 1`
+
+	eval "CONFIG${BOARD_NUM}=\"$config_name\""
+
+	echo -n "  ${BOARD_NUM}. $config_name"
+
+	[ -z "$help_info" ] && { echo ""; continue; }
+
+	echo "	<$help_info>"
+
+	help_info=""
+
+done << EOF
+`cat hisilicon_board*.mk`
+EOF
+
+[ $BOARD_NUM -le 0 ] && { echo "None of valid board found!"; exit 1; }
+
+echo -n "Please type your board number (1-$BOARD_NUM): "
+read sel
+
+eval "CONFIG=\"\$CONFIG$sel\""
+
+[ -z "$CONFIG" ] && { echo "Input error, no such board!" > /dev/stderr; exit 1; }
+echo "$CONFIG"
+
+make -C ./ "${CONFIG}_config"
+

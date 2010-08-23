@@ -1,0 +1,231 @@
+# 1 "/work/u-boot-1.1.4/net//"
+net.o: net.c /work/u-boot-1.1.4/include/common.h \
+  /work/u-boot-1.1.4/include/config.h \
+  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/u-boot-1.1.4/include/linux/bitops.h \
+  /work/u-boot-1.1.4/include/asm/bitops.h \
+  /work/u-boot-1.1.4/include/linux/types.h \
+  /work/u-boot-1.1.4/include/linux/config.h \
+  /work/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/u-boot-1.1.4/include/linux/stddef.h \
+  /work/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/u-boot-1.1.4/include/asm/types.h \
+  /work/u-boot-1.1.4/include/linux/string.h \
+  /work/u-boot-1.1.4/include/asm/string.h \
+  /work/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
+  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
+  /work/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/u-boot-1.1.4/include/asm/global_data.h \
+  /work/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/u-boot-1.1.4/include/asm/setup.h \
+  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/u-boot-1.1.4/include/watchdog.h \
+  /work/u-boot-1.1.4/include/command.h /work/u-boot-1.1.4/include/net.h \
+  /work/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/generic.h bootp.h tftp.h \
+  rarp.h nfs.h
+# 1 "/work/u-boot-1.1.4/net//"
+tftp.o: tftp.c /work/u-boot-1.1.4/include/common.h \
+  /work/u-boot-1.1.4/include/config.h \
+  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/u-boot-1.1.4/include/linux/bitops.h \
+  /work/u-boot-1.1.4/include/asm/bitops.h \
+  /work/u-boot-1.1.4/include/linux/types.h \
+  /work/u-boot-1.1.4/include/linux/config.h \
+  /work/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/u-boot-1.1.4/include/linux/stddef.h \
+  /work/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/u-boot-1.1.4/include/asm/types.h \
+  /work/u-boot-1.1.4/include/linux/string.h \
+  /work/u-boot-1.1.4/include/asm/string.h \
+  /work/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
+  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
+  /work/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/u-boot-1.1.4/include/asm/global_data.h \
+  /work/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/u-boot-1.1.4/include/asm/setup.h \
+  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/u-boot-1.1.4/include/command.h /work/u-boot-1.1.4/include/net.h \
+  /work/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/generic.h tftp.h bootp.h
+# 1 "/work/u-boot-1.1.4/net//"
+bootp.o: bootp.c /work/u-boot-1.1.4/include/common.h \
+  /work/u-boot-1.1.4/include/config.h \
+  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/u-boot-1.1.4/include/linux/bitops.h \
+  /work/u-boot-1.1.4/include/asm/bitops.h \
+  /work/u-boot-1.1.4/include/linux/types.h \
+  /work/u-boot-1.1.4/include/linux/config.h \
+  /work/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/u-boot-1.1.4/include/linux/stddef.h \
+  /work/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/u-boot-1.1.4/include/asm/types.h \
+  /work/u-boot-1.1.4/include/linux/string.h \
+  /work/u-boot-1.1.4/include/asm/string.h \
+  /work/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
+  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
+  /work/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/u-boot-1.1.4/include/asm/global_data.h \
+  /work/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/u-boot-1.1.4/include/asm/setup.h \
+  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/u-boot-1.1.4/include/command.h /work/u-boot-1.1.4/include/net.h \
+  /work/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/generic.h bootp.h tftp.h \
+  nfs.h
+# 1 "/work/u-boot-1.1.4/net//"
+rarp.o: rarp.c /work/u-boot-1.1.4/include/common.h \
+  /work/u-boot-1.1.4/include/config.h \
+  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/u-boot-1.1.4/include/linux/bitops.h \
+  /work/u-boot-1.1.4/include/asm/bitops.h \
+  /work/u-boot-1.1.4/include/linux/types.h \
+  /work/u-boot-1.1.4/include/linux/config.h \
+  /work/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/u-boot-1.1.4/include/linux/stddef.h \
+  /work/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/u-boot-1.1.4/include/asm/types.h \
+  /work/u-boot-1.1.4/include/linux/string.h \
+  /work/u-boot-1.1.4/include/asm/string.h \
+  /work/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
+  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
+  /work/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/u-boot-1.1.4/include/asm/global_data.h \
+  /work/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/u-boot-1.1.4/include/asm/setup.h \
+  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/u-boot-1.1.4/include/command.h /work/u-boot-1.1.4/include/net.h \
+  /work/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/generic.h nfs.h bootp.h \
+  rarp.h tftp.h
+# 1 "/work/u-boot-1.1.4/net//"
+eth.o: eth.c /work/u-boot-1.1.4/include/common.h \
+  /work/u-boot-1.1.4/include/config.h \
+  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/u-boot-1.1.4/include/linux/bitops.h \
+  /work/u-boot-1.1.4/include/asm/bitops.h \
+  /work/u-boot-1.1.4/include/linux/types.h \
+  /work/u-boot-1.1.4/include/linux/config.h \
+  /work/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/u-boot-1.1.4/include/linux/stddef.h \
+  /work/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/u-boot-1.1.4/include/asm/types.h \
+  /work/u-boot-1.1.4/include/linux/string.h \
+  /work/u-boot-1.1.4/include/asm/string.h \
+  /work/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
+  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
+  /work/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/u-boot-1.1.4/include/asm/global_data.h \
+  /work/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/u-boot-1.1.4/include/asm/setup.h \
+  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/u-boot-1.1.4/include/command.h /work/u-boot-1.1.4/include/net.h \
+  /work/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/u-boot-1.1.4/include/miiphy.h
+# 1 "/work/u-boot-1.1.4/net//"
+nfs.o: nfs.c /work/u-boot-1.1.4/include/common.h \
+  /work/u-boot-1.1.4/include/config.h \
+  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/u-boot-1.1.4/include/linux/bitops.h \
+  /work/u-boot-1.1.4/include/asm/bitops.h \
+  /work/u-boot-1.1.4/include/linux/types.h \
+  /work/u-boot-1.1.4/include/linux/config.h \
+  /work/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/u-boot-1.1.4/include/linux/stddef.h \
+  /work/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/u-boot-1.1.4/include/asm/types.h \
+  /work/u-boot-1.1.4/include/linux/string.h \
+  /work/u-boot-1.1.4/include/asm/string.h \
+  /work/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
+  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
+  /work/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/u-boot-1.1.4/include/asm/global_data.h \
+  /work/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/u-boot-1.1.4/include/asm/setup.h \
+  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/u-boot-1.1.4/include/command.h /work/u-boot-1.1.4/include/net.h \
+  /work/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/u-boot-1.1.4/include/malloc.h nfs.h bootp.h
+# 1 "/work/u-boot-1.1.4/net//"
+sntp.o: sntp.c /work/u-boot-1.1.4/include/common.h \
+  /work/u-boot-1.1.4/include/config.h \
+  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/u-boot-1.1.4/include/linux/bitops.h \
+  /work/u-boot-1.1.4/include/asm/bitops.h \
+  /work/u-boot-1.1.4/include/linux/types.h \
+  /work/u-boot-1.1.4/include/linux/config.h \
+  /work/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/u-boot-1.1.4/include/linux/stddef.h \
+  /work/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/u-boot-1.1.4/include/asm/types.h \
+  /work/u-boot-1.1.4/include/linux/string.h \
+  /work/u-boot-1.1.4/include/asm/string.h \
+  /work/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
+  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
+  /work/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/u-boot-1.1.4/include/asm/global_data.h \
+  /work/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/u-boot-1.1.4/include/asm/setup.h \
+  /work/u-boot-1.1.4/include/asm/u-boot-arm.h \
+  /work/u-boot-1.1.4/include/command.h /work/u-boot-1.1.4/include/net.h \
+  /work/u-boot-1.1.4/include/asm/byteorder.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/little_endian.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/swab.h \
+  /work/u-boot-1.1.4/include/linux/byteorder/generic.h \
+  /work/u-boot-1.1.4/include/rtc.h sntp.h

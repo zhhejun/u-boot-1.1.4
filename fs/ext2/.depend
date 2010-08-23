@@ -1,0 +1,54 @@
+# 1 "/work/u-boot-1.1.4/fs/ext2//"
+ext2fs.o: ext2fs.c /work/u-boot-1.1.4/include/common.h \
+  /work/u-boot-1.1.4/include/config.h \
+  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/u-boot-1.1.4/include/linux/bitops.h \
+  /work/u-boot-1.1.4/include/asm/bitops.h \
+  /work/u-boot-1.1.4/include/linux/types.h \
+  /work/u-boot-1.1.4/include/linux/config.h \
+  /work/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/u-boot-1.1.4/include/linux/stddef.h \
+  /work/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/u-boot-1.1.4/include/asm/types.h \
+  /work/u-boot-1.1.4/include/linux/string.h \
+  /work/u-boot-1.1.4/include/asm/string.h \
+  /work/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
+  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
+  /work/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/u-boot-1.1.4/include/asm/global_data.h \
+  /work/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/u-boot-1.1.4/include/asm/setup.h \
+  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/work/u-boot-1.1.4/fs/ext2//"
+dev.o: dev.c /work/u-boot-1.1.4/include/common.h \
+  /work/u-boot-1.1.4/include/config.h \
+  /work/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /work/u-boot-1.1.4/include/asm/arch/platform.h \
+  /work/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /work/u-boot-1.1.4/include/cmd_confdefs.h \
+  /work/u-boot-1.1.4/include/linux/bitops.h \
+  /work/u-boot-1.1.4/include/asm/bitops.h \
+  /work/u-boot-1.1.4/include/linux/types.h \
+  /work/u-boot-1.1.4/include/linux/config.h \
+  /work/u-boot-1.1.4/include/linux/posix_types.h \
+  /work/u-boot-1.1.4/include/linux/stddef.h \
+  /work/u-boot-1.1.4/include/asm/posix_types.h \
+  /work/u-boot-1.1.4/include/asm/types.h \
+  /work/u-boot-1.1.4/include/linux/string.h \
+  /work/u-boot-1.1.4/include/asm/string.h \
+  /work/u-boot-1.1.4/include/asm/ptrace.h \
+  /work/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /work/u-boot-1.1.4/include/part.h /work/u-boot-1.1.4/include/ide.h \
+  /work/u-boot-1.1.4/include/flash.h /work/u-boot-1.1.4/include/image.h \
+  /work/u-boot-1.1.4/include/asm/u-boot.h \
+  /work/u-boot-1.1.4/include/asm/global_data.h \
+  /work/u-boot-1.1.4/include/asm/mach-types.h \
+  /work/u-boot-1.1.4/include/asm/setup.h \
+  /work/u-boot-1.1.4/include/asm/u-boot-arm.h
