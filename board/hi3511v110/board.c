@@ -109,17 +109,18 @@ SC_PERCTRL1	Total Reset Value
 [2]	RW	pinmuxctrl2	0
 [1:0]	RW	pinmuxctrl1-0	01
 */
-	//gpio_ctrl = 0x000DCB21;
-  	gpio_ctrl = 0x000DCB01;
-	gpio_ctrl &= ~(1 << 0);/*GPIO0_0,GPIO0_1*/
+	gpio_ctrl = 0x000DCB21;
+ /* 	gpio_ctrl = 0x000DCB01;
+	gpio_ctrl &= ~(1 << 0);
 	gpio_ctrl &= ~(1 << 9);
 	gpio_ctrl &= ~(1 << 10);
 	gpio_ctrl &= ~(1 << 11);
 	gpio_ctrl &= ~(1 << 14);
 	gpio_ctrl |=  (1 << 17);
 	gpio_ctrl &= ~(1 << 18);
+*/
 	gpio_ctrl &= ~(1 << 19);
-	gpio_ctrl |=  (1 << 23);
+//	gpio_ctrl |=  (1 << 23);
 	
 
 	/*added by  daoguang Wu*/
