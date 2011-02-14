@@ -1,119 +1,128 @@
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-skge.o: skge.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-skaddr.o: skaddr.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-skgehwt.o: skgehwt.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-skgeinit.o: skgeinit.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-skgepnmi.o: skgepnmi.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-skgesirq.o: skgesirq.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-ski2c.o: ski2c.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-sklm80.o: sklm80.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-skqueue.o: skqueue.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-skrlmt.o: skrlmt.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-sktimer.o: sktimer.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-skvpd.o: skvpd.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-skxmac2.o: skxmac2.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-skcsum.o: skcsum.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-uboot_skb.o: uboot_skb.c /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
-# 1 "/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
-uboot_drv.o: uboot_drv.c /work/hi3511/u-boot-1.1.4/include/common.h \
-  /work/hi3511/u-boot-1.1.4/include/config.h \
-  /work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
-  /work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
-  /work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
-  /work/hi3511/u-boot-1.1.4/include/linux/types.h \
-  /work/hi3511/u-boot-1.1.4/include/linux/config.h \
-  /work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
-  /work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/types.h \
-  /work/hi3511/u-boot-1.1.4/include/linux/string.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/string.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
-  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
-  /work/hi3511/u-boot-1.1.4/include/part.h \
-  /work/hi3511/u-boot-1.1.4/include/ide.h \
-  /work/hi3511/u-boot-1.1.4/include/flash.h \
-  /work/hi3511/u-boot-1.1.4/include/image.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/setup.h \
-  /work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+skge.o: skge.c /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+skaddr.o: skaddr.c /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+skgehwt.o: skgehwt.c \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+skgeinit.o: skgeinit.c \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+skgepnmi.o: skgepnmi.c \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+skgesirq.o: skgesirq.c \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+ski2c.o: ski2c.c /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+sklm80.o: sklm80.c /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+skqueue.o: skqueue.c \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+skrlmt.o: skrlmt.c /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+sktimer.o: sktimer.c \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+skvpd.o: skvpd.c /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+skxmac2.o: skxmac2.c \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+skcsum.o: skcsum.c /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+uboot_skb.o: uboot_skb.c \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/drivers/sk98lin//"
+uboot_drv.o: uboot_drv.c \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/common.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/configs/hi3511v110.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/platform.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/arch/ddrc.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/cmd_confdefs.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/linux/bitops.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/bitops.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/linux/types.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/linux/config.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/linux/posix_types.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/linux/stddef.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/posix_types.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/types.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/linux/string.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/string.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/ptrace.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/proc/ptrace.h \
+  /home/bamboo/work/hi3511/cross_tools/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/part.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/ide.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/flash.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/image.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/u-boot.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/global_data.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/mach-types.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/setup.h \
+  /home/bamboo/work/hi3511/u-boot-1.1.4/include/asm/u-boot-arm.h

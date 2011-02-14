@@ -123,7 +123,7 @@
 #define CONFIG_BOOTDELAY	2
 #define CONFIG_ZERO_BOOTDELAY_CHECK 1
 
-#define CONFIG_BOOTARGS "mem=128M console=ttyAMA0,115200 root=/dev/mtdblock/2 rootfstype=jffs2 mmz=ddr,1,0x680M,128M mtdparts=phys_mapped_flash:1M(boot),2M(kernel),18M(rootfs),6M(update),4M(blk),1M(para)boardip=192.168.0.100"
+#define CONFIG_BOOTARGS "mem=128M console=ttyAMA0,115200 root=/dev/mtdblock/2 rootfstype=jffs2 mmz=ddr,1,0x680M,128M mtdparts=phys_mapped_flash:1M(boot),2M(kernel),13M(rootfs),5M(update),3M(blk),7M(app),1M(para) boardip=192.168.0.100"
 #define CONFIG_BOOTCOMMAND "bootm 0x34100000"
 #define CONFIG_NETMASK	255.255.255.0		/* talk on MY local net */
 #define CONFIG_IPADDR	192.168.0.93		/* static IP I currently own */
@@ -286,6 +286,6 @@
 #define HISILICON_WDT_EXT_GPIO_GROUP        3
 #define HISILTCON_WDT_EXT_GPIO_BITS         5
 
-#define CONFIG_IDENT_STRING                 "  VER:  boot-3511dvr-v1.0" 
+#define CONFIG_IDENT_STRING                 " Version: uboot-110v8001-1.09" 
 #define CONFIG_BOOT_RETRY_TIME	            60
 #endif	/* __CONFIG_H */

@@ -1,4 +1,4 @@
-# 1 "/media/disk-3/\346\265\267\346\200\2353511/Hi3511_VSSDK_V1.1.2.3/source/os/u-boot-1.1.4/fs/fat//"
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/fs/fat//"
 fat.o: fat.c ../..//include/common.h ../..//include/config.h \
   ../..//include/configs/hi3511v110.h ../..//include/asm/arch/platform.h \
   ../..//include/asm/arch/ddrc.h ../..//include/cmd_confdefs.h \
@@ -8,7 +8,7 @@ fat.o: fat.c ../..//include/common.h ../..//include/config.h \
   ../..//include/asm/posix_types.h ../..//include/asm/types.h \
   ../..//include/linux/string.h ../..//include/asm/string.h \
   ../..//include/asm/ptrace.h ../..//include/asm/proc/ptrace.h \
-  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /home/bamboo/work/hi3511/cross_tools/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
   ../..//include/part.h ../..//include/ide.h ../..//include/flash.h \
   ../..//include/image.h ../..//include/asm/u-boot.h \
   ../..//include/asm/global_data.h ../..//include/asm/mach-types.h \
@@ -17,7 +17,7 @@ fat.o: fat.c ../..//include/common.h ../..//include/config.h \
   ../..//include/linux/byteorder/little_endian.h \
   ../..//include/linux/byteorder/swab.h \
   ../..//include/linux/byteorder/generic.h
-# 1 "/media/disk-3/\346\265\267\346\200\2353511/Hi3511_VSSDK_V1.1.2.3/source/os/u-boot-1.1.4/fs/fat//"
+# 1 "/home/bamboo/work/hi3511/u-boot-1.1.4/fs/fat//"
 file.o: file.c ../..//include/common.h ../..//include/config.h \
   ../..//include/configs/hi3511v110.h ../..//include/asm/arch/platform.h \
   ../..//include/asm/arch/ddrc.h ../..//include/cmd_confdefs.h \
@@ -27,7 +27,7 @@ file.o: file.c ../..//include/common.h ../..//include/config.h \
   ../..//include/asm/posix_types.h ../..//include/asm/types.h \
   ../..//include/linux/string.h ../..//include/asm/string.h \
   ../..//include/asm/ptrace.h ../..//include/asm/proc/ptrace.h \
-  /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
+  /home/bamboo/work/hi3511/cross_tools/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/include/stdarg.h \
   ../..//include/part.h ../..//include/ide.h ../..//include/flash.h \
   ../..//include/image.h ../..//include/asm/u-boot.h \
   ../..//include/asm/global_data.h ../..//include/asm/mach-types.h \

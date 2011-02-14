@@ -71,76 +71,25 @@ static inline void delay (unsigned long loops)
 	GPIO3_4				IIC_CLK		O
 	GPIO3_3				IIC_SDA		IO
 */
-void ledv8_on(void)
-{
-	unsigned int temp;
-	temp &= 0<<1;
-	temp |= 1<<2;
-	__raw_writel(temp , REG_BASE_GPIO3 + 0x3FC);
-
-}
-
-void ledv8_off(void)
-{
-        unsigned int temp;
-	temp |= 1<<1;
-	temp |= 1<<2;
-	__raw_writel(temp , REG_BASE_GPIO3 + 0x3FC);
-}
-
-void dogv8_ext_feed(void)
-{
-	unsigned int temp;
-	temp  = __raw_readl(REG_BASE_GPIO3 + (1<<7));
-	temp |= 1<<5;
-	__raw_writel(temp , REG_BASE_GPIO3 + (1<<7));
-	udelay(100);
-	temp &= 0<<5;
-	__raw_writel(temp , REG_BASE_GPIO3 + (1<<7));
-}
 void led_on(void)
 {
 //	#define GPIO3_DATA			(REG_BASE_GPIO3+0x3FC)
 //	#define GPIO3_DIR			(REG_BASE_GPIO3+REG_GPIO_DIR)
 
-	unsigned int temp,temp1,temp2,temp3;
-	temp1= __raw_readl(REG_BASE_SCTL + REG_SC_PERCTRL1);
-	temp =temp1;
+	unsigned int temp;	
+	temp= __raw_readl(REG_BASE_SCTL + REG_SC_PERCTRL1);
 	temp  |= 1<< 24;
 	__raw_writel(temp, REG_BASE_SCTL + REG_SC_PERCTRL1);
 
 
-	temp2= __raw_readl(REG_BASE_GPIO3 + REG_GPIO_DIR);
-	temp = temp2;
+	temp= __raw_readl(REG_BASE_GPIO3 + REG_GPIO_DIR);
 	temp |= 3<<1;
 	__raw_writel(temp , REG_BASE_GPIO3 + REG_GPIO_DIR);
 
-	temp3 = __raw_readl(REG_BASE_GPIO3 + 0x3FC);
-	temp = temp3;
-	temp &= 0<<1;
-	temp |= 1<<2;
+	temp = __raw_readl(REG_BASE_GPIO3 + 0x3FC);
+	temp |= 1<<1;
+	temp &= 0<<2;
 	__raw_writel(temp , REG_BASE_GPIO3 + 0x3FC);
-	int i = 200;
-
-	while((i--) > 0)
-	{
-	udelay(10000);
- //	ledv8_on();
-        dogv8_ext_feed();	
-  
-	}
-/*	while((i--) > 0)
-	{
-	udelay(10000);
-  	ledv8_on();
-        dogv8_ext_feed();	
-  
-	}
-*/	
-	__raw_writel(temp1, REG_BASE_SCTL + REG_SC_PERCTRL1);
-	__raw_writel(temp2, REG_BASE_GPIO3 + REG_GPIO_DIR);
-	__raw_writel(temp3, REG_BASE_GPIO3 + 0x3FC);
-
 
 }
 void led_off(void)
@@ -203,17 +152,12 @@ SC_PERCTRL1	Total Reset Value
 	gpio_ctrl &= ~(1 << 18);
 */
 	gpio_ctrl &= ~(1 << 19);
-	gpio_ctrl &= ~(1 << 11);
-	
-// Wu DaoGuang added for watchdog.
+
 	temp= __raw_readl(REG_BASE_GPIO3 + REG_GPIO_DIR);
-	temp |= 1<<5;
+	temp |= 5<<1;
 	__raw_writel(temp , REG_BASE_GPIO3 + REG_GPIO_DIR);
-// Wu DaoGuang added for LCDPower configuration.
-	temp= __raw_readl(REG_BASE_GPIO6 + REG_GPIO_DIR);
-	temp |= 1<<3;
-	__raw_writel(temp , REG_BASE_GPIO6 + REG_GPIO_DIR);
-	
+
+
 
 //	temp = __raw_readl(REG_BASE_GPIO3+0x3fc);
 //	temp |= 5<<1;
@@ -237,7 +181,7 @@ SC_PERCTRL1	Total Reset Value
 	__raw_writel(reg , REG_BASE_SCTL + REG_SC_PERCTRL4);
 	
 	led_on();
-//	led_off();
+	led_off();
 }
 
 /*

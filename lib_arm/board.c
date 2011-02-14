@@ -121,7 +121,7 @@ static int init_baudrate (void)
 }
 
 /* Auto Module Version */
-#define OSDRV_MODULE_VERSION_STRING "U_BOOT_1_1_4-M08C0305B0301 @Hi3511v110_OSDrv_1_0_0_7 2009-03-18 20:44:35"
+#define OSDRV_MODULE_VERSION_STRING "U_BOOT @YanXon NetWork 2011-01-18   17:49  "
 
 static int display_banner (void)
 {
