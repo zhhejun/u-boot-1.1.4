@@ -123,7 +123,7 @@
 #define CONFIG_BOOTDELAY	2
 #define CONFIG_ZERO_BOOTDELAY_CHECK 1
 
-#define CONFIG_BOOTARGS "mem=128M console=ttyAMA0,115200 root=/dev/mtdblock/2 rootfstype=jffs2 mmz=ddr,1,0x680M,128M mtdparts=phys_mapped_flash:1M(boot),2M(kernel),13M(rootfs),5M(update),3M(blk),7M(app),1M(para) boardip=192.168.0.100"
+#define CONFIG_BOOTARGS "mem=128M console=null root=/dev/mtdblock/2 rootfstype=jffs2 mmz=ddr,1,0x680M,128M mtdparts=phys_mapped_flash:1M(boot),2M(kernel),13M(rootfs),5M(update),3M(blk),7M(app),1M(para) boardip=192.168.0.100"
 #define CONFIG_BOOTCOMMAND "bootm 0x34100000"
 #define CONFIG_NETMASK	255.255.255.0		/* talk on MY local net */
 #define CONFIG_IPADDR	192.168.0.93		/* static IP I currently own */

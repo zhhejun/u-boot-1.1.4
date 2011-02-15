@@ -85,7 +85,7 @@ Linker script and memory map
                 0x00000000                . = 0x0
                 0x00000000                . = ALIGN (0x4)
 
-.text           0xe0500000    0x13510
+.text           0xe0500000    0x13514
  cpu/hi3511v100/start.o(.text)
  .text          0xe0500000      0x400 cpu/hi3511v100/start.o
                 0xe0500044                _bss_start
@@ -299,396 +299,396 @@ Linker script and memory map
                 0xe050cb60                cfree
                 0xe050ca6c                valloc
                 0xe050bc8c                free
- .text          0xe050cc18      0x264 common/libcommon.a(env_common.o)
+ .text          0xe050cc18      0x268 common/libcommon.a(env_common.o)
                 0xe050cc88                env_get_addr
-                0xe050cd38                env_complete
+                0xe050cd3c                env_complete
                 0xe050cca8                env_relocate
                 0xe050cc18                env_crc_update
                 0xe050cc68                env_get_char_memory
- .text          0xe050ce7c      0x148 common/libcommon.a(env_flash.o)
-                0xe050cfa4                env_relocate_spec
-                0xe050cee0                saveenv
-                0xe050ce7c                env_get_char_spec
-                0xe050ce88                env_init
- .text          0xe050cfc4       0x90 common/libcommon.a(exports.o)
-                0xe050cfd0                jumptable_init
-                0xe050cfc8                get_version
- .text          0xe050d054      0x3e4 common/libcommon.a(flash.o)
-                0xe050d1b4                flash_write
-                0xe050d054                flash_protect
-                0xe050d16c                addr2info
-                0xe050d358                flash_perror
- .text          0xe050d438      0x3cc common/libcommon.a(lists.o)
-                0xe050d498                DisposeHandle
-                0xe050d5a8                ListDispose
-                0xe050d5ac                ListInsertItems
-                0xe050d594                ListSetAllocationPolicy
-                0xe050d7ec                ListGetItemSize
-                0xe050d7e0                ListGetDataPtr
-                0xe050d438                NewHandle
-                0xe050d4c0                SetHandleSize
-                0xe050d760                ListInsertItem
-                0xe050d4b8                GetHandleSize
-                0xe050d7f8                ListNumItems
-                0xe050d7b0                ListGetPtrToItem
-                0xe050d534                ListCreate
-                0xe050d768                ListGetItems
- .text          0xe050d804     0x1600 drivers/hisilicon/libdrv.a(hisilicon-net.o)
-                0xe050e114                ETH_ReadQueueUseLength
-                0xe050e268                ETH_SetPortShortFrameReceive
-                0xe050e374                ETH_SetPHYFrequency
-                0xe050e8d8                ETH_SetioutQueuelen
-                0xe050ed20                ETH_Init
-                0xe050e5c0                ETH_AddMACFiltFormContent
-                0xe050e308                ETH_SetShortFrameLength
-                0xe050e86c                printOneMemory
-                0xe050e354                ETH_SetPHYExternAddress
-                0xe050e000                ETH_SetNormalInterruptStyle
-                0xe050eb4c                eth_halt
-                0xe050e288                ETH_SetPortPostFrameSend
-                0xe050e600                ETH_ReadMACFiltFormContent
-                0xe050e8c0                transmit_frame_addr
-                0xe050df94                ETH_SetInterruptEnable
-                0xe050e404                ETH_ReadPHYPortInformation
-                0xe050e9b8                eth_soft_reset
-                0xe050e2a8                ETH_SetPortCountRollCtrl
-                0xe050e76c                ETH_FrameTransmit
-                0xe050eb48                ETH_SoftResetPort
-                0xe050e808                PrintMemory
-                0xe050e644                ETH_SetInMACFiltCtrl_local
-                0xe050eab8                init_eth_mac_env
-                0xe050e7c0                TestCpuSentFrame
-                0xe050e4f8                ETH_PhyRead
-                0xe050e0d0                ETH_SetPauseFrameLimitLevel
-                0xe050d804                Calc_CRC32
-                0xe050dfdc                ETH_ClearInterruptStatus
-                0xe050e394                ETH_SetPHYChipInformationAddress
-                0xe050e018                ETH_SetEndian
-                0xe050dfc4                ETH_ReadInterruptStatus
-                0xe050e890                SetRegister
-                0xe050d8a0                caculate_crc32
-                0xe050e904                ETH_FrameTransmitPacket
-                0xe050e2c8                ETH_SetFrameCRCCtlRebuild
-                0xe050e67c                ETH_SetInMACFiltenable
-                0xe050e230                ETH_ClearPortCountInformation
-                0xe050ebb0                ETH_InterruptHandler
-                0xe050e2e8                ETH_SetLongFrameLength
-                0xe050ea3c                string_to_mac
-                0xe050ea20                ETH_changcontrol__
-                0xe050e6b4                ETH_SetMACFiltCtrl_destination
-                0xe050dfac                ETH_ReadInterruptEnable
-                0xe050e138                ETH_SetFrameConfiguration
-                0xe050e9a8                ETH_SetMACFiltCtrl
-                0xe050e944                ETH_SET_MAC
-                0xe050e1c4                ETH_ReadSpeedLinkDuplexMode
-                0xe050eb50                eth_rx
-                0xe050e248                ETH_SetPortCntCleanEnable
-                0xe050e9f8                ETH_changcontrol
-                0xe050e1f8                ETH_ClearSpeedLinkDuplexMode
-                0xe050e6e8                ETH_FrameReceive
-                0xe050e044                ETH_SetFrameQueueLength
-                0xe050edf0                eth_init
-                0xe050e43c                ETH_PhyWrite
-                0xe050e328                ETH_SetLoopBackEnable
-                0xe050e18c                ETH_SetSpeedLinkDuplexMode
-                0xe050eb8c                eth_send
-                0xe050e16c                ETH_SetPortStatusMode
- .text          0xe050ee04      0x258 drivers/hisilicon/libdrv.a(watchdog.o)
-                0xe050eed4                reconfig_hidog
-                0xe050eea0                hw_watchdog_reset
- .text          0xe050f05c       0xfc lib_generic/libgeneric.a(crc32.o)
-                0xe050f05c                crc32
- .text          0xe050f158       0xb8 lib_generic/libgeneric.a(display_options.o)
-                0xe050f158                display_options
-                0xe050f178                print_size
- .text          0xe050f210      0x62c lib_generic/libgeneric.a(string.o)
-                0xe050f29c                strcpy
-                0xe050f780                memscan
-                0xe050f6ec                memmove
-                0xe050f6c4                memcpy
-                0xe050f618                strswab
-                0xe050f44c                strnlen
-                0xe050f414                strrchr
-                0xe050f2dc                strcat
-                0xe050f80c                memchr
-                0xe050f7a4                strstr
-                0xe050f378                strncmp
-                0xe050f2b8                strncpy
-                0xe050f698                bcopy
-                0xe050f55c                strtok
-                0xe050f74c                memcmp
-                0xe050f308                strncat
-                0xe050f484                strdup
-                0xe050f674                memset
-                0xe050f348                strcmp
-                0xe050f5e0                strsep
-                0xe050f210                strnicmp
-                0xe050f4bc                strspn
-                0xe050f3f0                strlen
-                0xe050f3c0                strchr
-                0xe050f51c                strpbrk
- .text          0xe050f83c      0x7a0 lib_generic/libgeneric.a(vsprintf.o)
-                0xe050fb94                vsprintf
-                0xe050f8f4                simple_strtol
-                0xe050ff94                panic
-                0xe050ff74                sprintf
-                0xe050f83c                simple_strtoul
- .text          0xe050ffdc     0x2a3c lib_generic/libgeneric.a(zlib.o)
-                0xe0510d90                inflate
-                0xe051031c                inflateInit2
-                0xe05104d4                inflateIncomp
-                0xe05128a4                adler32
-                0xe05101a8                inflateReset
-                0xe0510210                inflateSync
-                0xe051047c                inflateInit
-                0xe0510108                inflateEnd
- .text          0xe0512a18      0x250 board/hi3511v110/libhi3511v110.a(board.o)
-                0xe0512c48                dram_init
-                0xe0512a2c                ledv8_off
-                0xe0512a6c                led_on
-                0xe0512a18                ledv8_on
-                0xe0512a40                dogv8_ext_feed
-                0xe0512b6c                board_init
-                0xe0512ae4                led_off
-                0xe0512c24                misc_init_r
-                0xe0512afc                gpio_init
- .text          0xe0512c68      0x144 cpu/hi3511v100/libhi3511v100.a(cpu.o)
-                0xe0512d34                get_mclk
-                0xe0512ca8                cleanup_before_linux
-                0xe0512ca0                cpu_init
-                0xe0512ce8                icache_enable
-                0xe0512cd0                do_reset
-                0xe0512d04                icache_disable
-                0xe0512d20                icache_status
- .text          0xe0512dac       0xb4 lib_arm/libarm.a(_umodsi3.o)
-                0xe0512dac                __umodsi3
- .text          0xe0512e60      0x488 lib_arm/libarm.a(armlinux.o)
-                0xe0512e60                do_bootm_linux
- .text          0xe05132e8        0x4 lib_arm/libarm.a(cache.o)
-                0xe05132e8                flush_cache
- .text          0xe05132ec      0x140 /home/bamboo/work/hi3511/cross_tools/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/libgcc.a(_divsi3.oS)
-                0xe05132ec                __divsi3
-                0xe0513414                __aeabi_idivmod
- .text          0xe051342c       0xe4 /home/bamboo/work/hi3511/cross_tools/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/libgcc.a(_modsi3.oS)
-                0xe051342c                __modsi3
+ .text          0xe050ce80      0x148 common/libcommon.a(env_flash.o)
+                0xe050cfa8                env_relocate_spec
+                0xe050cee4                saveenv
+                0xe050ce80                env_get_char_spec
+                0xe050ce8c                env_init
+ .text          0xe050cfc8       0x90 common/libcommon.a(exports.o)
+                0xe050cfd4                jumptable_init
+                0xe050cfcc                get_version
+ .text          0xe050d058      0x3e4 common/libcommon.a(flash.o)
+                0xe050d1b8                flash_write
+                0xe050d058                flash_protect
+                0xe050d170                addr2info
+                0xe050d35c                flash_perror
+ .text          0xe050d43c      0x3cc common/libcommon.a(lists.o)
+                0xe050d49c                DisposeHandle
+                0xe050d5ac                ListDispose
+                0xe050d5b0                ListInsertItems
+                0xe050d598                ListSetAllocationPolicy
+                0xe050d7f0                ListGetItemSize
+                0xe050d7e4                ListGetDataPtr
+                0xe050d43c                NewHandle
+                0xe050d4c4                SetHandleSize
+                0xe050d764                ListInsertItem
+                0xe050d4bc                GetHandleSize
+                0xe050d7fc                ListNumItems
+                0xe050d7b4                ListGetPtrToItem
+                0xe050d538                ListCreate
+                0xe050d76c                ListGetItems
+ .text          0xe050d808     0x1600 drivers/hisilicon/libdrv.a(hisilicon-net.o)
+                0xe050e118                ETH_ReadQueueUseLength
+                0xe050e26c                ETH_SetPortShortFrameReceive
+                0xe050e378                ETH_SetPHYFrequency
+                0xe050e8dc                ETH_SetioutQueuelen
+                0xe050ed24                ETH_Init
+                0xe050e5c4                ETH_AddMACFiltFormContent
+                0xe050e30c                ETH_SetShortFrameLength
+                0xe050e870                printOneMemory
+                0xe050e358                ETH_SetPHYExternAddress
+                0xe050e004                ETH_SetNormalInterruptStyle
+                0xe050eb50                eth_halt
+                0xe050e28c                ETH_SetPortPostFrameSend
+                0xe050e604                ETH_ReadMACFiltFormContent
+                0xe050e8c4                transmit_frame_addr
+                0xe050df98                ETH_SetInterruptEnable
+                0xe050e408                ETH_ReadPHYPortInformation
+                0xe050e9bc                eth_soft_reset
+                0xe050e2ac                ETH_SetPortCountRollCtrl
+                0xe050e770                ETH_FrameTransmit
+                0xe050eb4c                ETH_SoftResetPort
+                0xe050e80c                PrintMemory
+                0xe050e648                ETH_SetInMACFiltCtrl_local
+                0xe050eabc                init_eth_mac_env
+                0xe050e7c4                TestCpuSentFrame
+                0xe050e4fc                ETH_PhyRead
+                0xe050e0d4                ETH_SetPauseFrameLimitLevel
+                0xe050d808                Calc_CRC32
+                0xe050dfe0                ETH_ClearInterruptStatus
+                0xe050e398                ETH_SetPHYChipInformationAddress
+                0xe050e01c                ETH_SetEndian
+                0xe050dfc8                ETH_ReadInterruptStatus
+                0xe050e894                SetRegister
+                0xe050d8a4                caculate_crc32
+                0xe050e908                ETH_FrameTransmitPacket
+                0xe050e2cc                ETH_SetFrameCRCCtlRebuild
+                0xe050e680                ETH_SetInMACFiltenable
+                0xe050e234                ETH_ClearPortCountInformation
+                0xe050ebb4                ETH_InterruptHandler
+                0xe050e2ec                ETH_SetLongFrameLength
+                0xe050ea40                string_to_mac
+                0xe050ea24                ETH_changcontrol__
+                0xe050e6b8                ETH_SetMACFiltCtrl_destination
+                0xe050dfb0                ETH_ReadInterruptEnable
+                0xe050e13c                ETH_SetFrameConfiguration
+                0xe050e9ac                ETH_SetMACFiltCtrl
+                0xe050e948                ETH_SET_MAC
+                0xe050e1c8                ETH_ReadSpeedLinkDuplexMode
+                0xe050eb54                eth_rx
+                0xe050e24c                ETH_SetPortCntCleanEnable
+                0xe050e9fc                ETH_changcontrol
+                0xe050e1fc                ETH_ClearSpeedLinkDuplexMode
+                0xe050e6ec                ETH_FrameReceive
+                0xe050e048                ETH_SetFrameQueueLength
+                0xe050edf4                eth_init
+                0xe050e440                ETH_PhyWrite
+                0xe050e32c                ETH_SetLoopBackEnable
+                0xe050e190                ETH_SetSpeedLinkDuplexMode
+                0xe050eb90                eth_send
+                0xe050e170                ETH_SetPortStatusMode
+ .text          0xe050ee08      0x258 drivers/hisilicon/libdrv.a(watchdog.o)
+                0xe050eed8                reconfig_hidog
+                0xe050eea4                hw_watchdog_reset
+ .text          0xe050f060       0xfc lib_generic/libgeneric.a(crc32.o)
+                0xe050f060                crc32
+ .text          0xe050f15c       0xb8 lib_generic/libgeneric.a(display_options.o)
+                0xe050f15c                display_options
+                0xe050f17c                print_size
+ .text          0xe050f214      0x62c lib_generic/libgeneric.a(string.o)
+                0xe050f2a0                strcpy
+                0xe050f784                memscan
+                0xe050f6f0                memmove
+                0xe050f6c8                memcpy
+                0xe050f61c                strswab
+                0xe050f450                strnlen
+                0xe050f418                strrchr
+                0xe050f2e0                strcat
+                0xe050f810                memchr
+                0xe050f7a8                strstr
+                0xe050f37c                strncmp
+                0xe050f2bc                strncpy
+                0xe050f69c                bcopy
+                0xe050f560                strtok
+                0xe050f750                memcmp
+                0xe050f30c                strncat
+                0xe050f488                strdup
+                0xe050f678                memset
+                0xe050f34c                strcmp
+                0xe050f5e4                strsep
+                0xe050f214                strnicmp
+                0xe050f4c0                strspn
+                0xe050f3f4                strlen
+                0xe050f3c4                strchr
+                0xe050f520                strpbrk
+ .text          0xe050f840      0x7a0 lib_generic/libgeneric.a(vsprintf.o)
+                0xe050fb98                vsprintf
+                0xe050f8f8                simple_strtol
+                0xe050ff98                panic
+                0xe050ff78                sprintf
+                0xe050f840                simple_strtoul
+ .text          0xe050ffe0     0x2a3c lib_generic/libgeneric.a(zlib.o)
+                0xe0510d94                inflate
+                0xe0510320                inflateInit2
+                0xe05104d8                inflateIncomp
+                0xe05128a8                adler32
+                0xe05101ac                inflateReset
+                0xe0510214                inflateSync
+                0xe0510480                inflateInit
+                0xe051010c                inflateEnd
+ .text          0xe0512a1c      0x250 board/hi3511v110/libhi3511v110.a(board.o)
+                0xe0512c4c                dram_init
+                0xe0512a30                ledv8_off
+                0xe0512a70                led_on
+                0xe0512a1c                ledv8_on
+                0xe0512a44                dogv8_ext_feed
+                0xe0512b70                board_init
+                0xe0512ae8                led_off
+                0xe0512c28                misc_init_r
+                0xe0512b00                gpio_init
+ .text          0xe0512c6c      0x144 cpu/hi3511v100/libhi3511v100.a(cpu.o)
+                0xe0512d38                get_mclk
+                0xe0512cac                cleanup_before_linux
+                0xe0512ca4                cpu_init
+                0xe0512cec                icache_enable
+                0xe0512cd4                do_reset
+                0xe0512d08                icache_disable
+                0xe0512d24                icache_status
+ .text          0xe0512db0       0xb4 lib_arm/libarm.a(_umodsi3.o)
+                0xe0512db0                __umodsi3
+ .text          0xe0512e64      0x488 lib_arm/libarm.a(armlinux.o)
+                0xe0512e64                do_bootm_linux
+ .text          0xe05132ec        0x4 lib_arm/libarm.a(cache.o)
+                0xe05132ec                flush_cache
+ .text          0xe05132f0      0x140 /home/bamboo/work/hi3511/cross_tools/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/libgcc.a(_divsi3.oS)
+                0xe05132f0                __divsi3
+                0xe0513418                __aeabi_idivmod
+ .text          0xe0513430       0xe4 /home/bamboo/work/hi3511/cross_tools/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/libgcc.a(_modsi3.oS)
+                0xe0513430                __modsi3
 
-.glue_7         0xe0513510        0x0
+.glue_7         0xe0513514        0x0
 
-.glue_7t        0xe0513510        0x0
+.glue_7t        0xe0513514        0x0
 
-.rodata         0xe0513510      0x508
+.rodata         0xe0513514      0x508
  *(.rodata)
- .rodata        0xe0513510       0x80 cpu/hi3511v100/libhi3511v100.a(interrupts.o)
- .rodata        0xe0513590       0x44 lib_arm/libarm.a(board.o)
-                0xe0513590                version_string
- .rodata        0xe05135d4        0x8 net/libnet.a(net.o)
- .rodata        0xe05135dc        0x4 drivers/libdrivers.a(serial_pl011.o)
- .rodata        0xe05135e0       0x20 common/libcommon.a(cmd_mem.o)
- .rodata        0xe0513600       0x14 common/libcommon.a(cmd_nvedit.o)
- .rodata        0xe0513614        0x3 drivers/hisilicon/libdrv.a(hisilicon-net.o)
-                0xe0513615                CALC_CRC_MULTI_CONTINUE
-                0xe0513616                CALC_CRC_NORMAL
-                0xe0513614                CALC_CRC_MULTI_END
- *fill*         0xe0513617        0x1 00
- .rodata        0xe0513618      0x400 lib_generic/libgeneric.a(crc32.o)
+ .rodata        0xe0513514       0x80 cpu/hi3511v100/libhi3511v100.a(interrupts.o)
+ .rodata        0xe0513594       0x44 lib_arm/libarm.a(board.o)
+                0xe0513594                version_string
+ .rodata        0xe05135d8        0x8 net/libnet.a(net.o)
+ .rodata        0xe05135e0        0x4 drivers/libdrivers.a(serial_pl011.o)
+ .rodata        0xe05135e4       0x20 common/libcommon.a(cmd_mem.o)
+ .rodata        0xe0513604       0x14 common/libcommon.a(cmd_nvedit.o)
+ .rodata        0xe0513618        0x3 drivers/hisilicon/libdrv.a(hisilicon-net.o)
+                0xe0513619                CALC_CRC_MULTI_CONTINUE
+                0xe051361a                CALC_CRC_NORMAL
+                0xe0513618                CALC_CRC_MULTI_END
+ *fill*         0xe051361b        0x1 00
+ .rodata        0xe051361c      0x400 lib_generic/libgeneric.a(crc32.o)
 
-.rodata.str1.4  0xe0513a18     0x33f4
+.rodata.str1.4  0xe0513a1c     0x33f4
  .rodata.str1.4
-                0xe0513a18      0x293 cpu/hi3511v100/libhi3511v100.a(interrupts.o)
+                0xe0513a1c      0x293 cpu/hi3511v100/libhi3511v100.a(interrupts.o)
                                 0x29c (size before relaxing)
- *fill*         0xe0513cab        0x1 00
+ *fill*         0xe0513caf        0x1 00
  .rodata.str1.4
-                0xe0513cac       0xf9 lib_arm/libarm.a(board.o)
+                0xe0513cb0       0xf9 lib_arm/libarm.a(board.o)
                                 0x100 (size before relaxing)
- *fill*         0xe0513da5        0x3 00
+ *fill*         0xe0513da9        0x3 00
  .rodata.str1.4
-                0xe0513da8      0x1ed net/libnet.a(net.o)
+                0xe0513dac      0x1ed net/libnet.a(net.o)
                                 0x1f0 (size before relaxing)
- *fill*         0xe0513f95        0x3 00
+ *fill*         0xe0513f99        0x3 00
  .rodata.str1.4
-                0xe0513f98      0x2a3 net/libnet.a(tftp.o)
+                0xe0513f9c      0x2a3 net/libnet.a(tftp.o)
                                 0x2b0 (size before relaxing)
- *fill*         0xe051423b        0x1 00
+ *fill*         0xe051423f        0x1 00
  .rodata.str1.4
-                0xe051423c       0xd1 net/libnet.a(bootp.o)
+                0xe0514240       0xd1 net/libnet.a(bootp.o)
                                 0x108 (size before relaxing)
- *fill*         0xe051430d        0x3 00
+ *fill*         0xe0514311        0x3 00
  .rodata.str1.4
-                0xe0514310       0x13 net/libnet.a(rarp.o)
+                0xe0514314       0x13 net/libnet.a(rarp.o)
                                  0x48 (size before relaxing)
- *fill*         0xe0514323        0x1 00
+ *fill*         0xe0514327        0x1 00
  .rodata.str1.4
-                0xe0514324      0x395 drivers/libdrivers.a(cfi_flash.o)
+                0xe0514328      0x395 drivers/libdrivers.a(cfi_flash.o)
                                 0x3a0 (size before relaxing)
- *fill*         0xe05146b9        0x3 00
+ *fill*         0xe05146bd        0x3 00
  .rodata.str1.4
-                0xe05146bc      0x13c common/libcommon.a(main.o)
+                0xe05146c0      0x13c common/libcommon.a(main.o)
                                 0x148 (size before relaxing)
  .rodata.str1.4
-                0xe05147f8       0xbf common/libcommon.a(cmd_bdinfo.o)
+                0xe05147fc       0xbf common/libcommon.a(cmd_bdinfo.o)
                                  0xc0 (size before relaxing)
- *fill*         0xe05148b7        0x1 00
+ *fill*         0xe05148bb        0x1 00
  .rodata.str1.4
-                0xe05148b8      0x10b common/libcommon.a(cmd_boot.o)
+                0xe05148bc      0x10b common/libcommon.a(cmd_boot.o)
                                 0x118 (size before relaxing)
- *fill*         0xe05149c3        0x1 00
+ *fill*         0xe05149c7        0x1 00
  .rodata.str1.4
-                0xe05149c4      0x61a common/libcommon.a(cmd_bootm.o)
+                0xe05149c8      0x61a common/libcommon.a(cmd_bootm.o)
                                 0x638 (size before relaxing)
- *fill*         0xe0514fde        0x2 00
+ *fill*         0xe0514fe2        0x2 00
  .rodata.str1.4
-                0xe0514fe0      0x773 common/libcommon.a(cmd_flash.o)
+                0xe0514fe4      0x773 common/libcommon.a(cmd_flash.o)
                                 0x7bc (size before relaxing)
- *fill*         0xe0515753        0x1 00
+ *fill*         0xe0515757        0x1 00
  .rodata.str1.4
-                0xe0515754      0x1bc common/libcommon.a(cmd_load.o)
+                0xe0515758      0x1bc common/libcommon.a(cmd_load.o)
                                 0x1d4 (size before relaxing)
  .rodata.str1.4
-                0xe0515910      0x781 common/libcommon.a(cmd_mem.o)
+                0xe0515914      0x781 common/libcommon.a(cmd_mem.o)
                                 0x79c (size before relaxing)
- *fill*         0xe0516091        0x3 00
+ *fill*         0xe0516095        0x3 00
  .rodata.str1.4
-                0xe0516094      0x236 common/libcommon.a(cmd_net.o)
+                0xe0516098      0x236 common/libcommon.a(cmd_net.o)
                                 0x28c (size before relaxing)
- *fill*         0xe05162ca        0x2 00
+ *fill*         0xe05162ce        0x2 00
  .rodata.str1.4
-                0xe05162cc      0x28d common/libcommon.a(cmd_nvedit.o)
+                0xe05162d0      0x28d common/libcommon.a(cmd_nvedit.o)
                                 0x304 (size before relaxing)
- *fill*         0xe0516559        0x3 00
+ *fill*         0xe051655d        0x3 00
  .rodata.str1.4
-                0xe051655c      0x284 common/libcommon.a(command.o)
+                0xe0516560      0x284 common/libcommon.a(command.o)
                                 0x2b4 (size before relaxing)
  .rodata.str1.4
-                0xe05167e0       0x99 common/libcommon.a(console.o)
+                0xe05167e4       0x99 common/libcommon.a(console.o)
                                  0xa4 (size before relaxing)
- *fill*         0xe0516879        0x3 00
+ *fill*         0xe051687d        0x3 00
  .rodata.str1.4
-                0xe051687c       0x28 common/libcommon.a(devices.o)
+                0xe0516880       0x28 common/libcommon.a(devices.o)
                                  0x48 (size before relaxing)
  .rodata.str1.4
-                0xe05168a4       0x33 common/libcommon.a(env_common.o)
+                0xe05168a8       0x33 common/libcommon.a(env_common.o)
                                  0x38 (size before relaxing)
- *fill*         0xe05168d7        0x1 00
+ *fill*         0xe05168db        0x1 00
  .rodata.str1.4
-                0xe05168d8       0x31 common/libcommon.a(env_flash.o)
+                0xe05168dc       0x31 common/libcommon.a(env_flash.o)
                                  0x3c (size before relaxing)
- *fill*         0xe0516909        0x3 00
+ *fill*         0xe051690d        0x3 00
  .rodata.str1.4
-                0xe051690c      0x12d common/libcommon.a(flash.o)
+                0xe0516910      0x12d common/libcommon.a(flash.o)
                                 0x130 (size before relaxing)
- *fill*         0xe0516a39        0x3 00
+ *fill*         0xe0516a3d        0x3 00
  .rodata.str1.4
-                0xe0516a3c       0x6f drivers/hisilicon/libdrv.a(hisilicon-net.o)
+                0xe0516a40       0x6f drivers/hisilicon/libdrv.a(hisilicon-net.o)
                                  0x88 (size before relaxing)
- *fill*         0xe0516aab        0x1 00
+ *fill*         0xe0516aaf        0x1 00
  .rodata.str1.4
-                0xe0516aac       0x5d drivers/hisilicon/libdrv.a(watchdog.o)
+                0xe0516ab0       0x5d drivers/hisilicon/libdrv.a(watchdog.o)
                                  0x70 (size before relaxing)
- *fill*         0xe0516b09        0x3 00
+ *fill*         0xe0516b0d        0x3 00
  .rodata.str1.4
-                0xe0516b0c       0x17 lib_generic/libgeneric.a(display_options.o)
+                0xe0516b10       0x17 lib_generic/libgeneric.a(display_options.o)
                                  0x20 (size before relaxing)
- *fill*         0xe0516b23        0x1 00
+ *fill*         0xe0516b27        0x1 00
  .rodata.str1.4
-                0xe0516b24       0x57 lib_generic/libgeneric.a(vsprintf.o)
+                0xe0516b28       0x57 lib_generic/libgeneric.a(vsprintf.o)
                                  0x58 (size before relaxing)
- *fill*         0xe0516b7b        0x1 00
+ *fill*         0xe0516b7f        0x1 00
  .rodata.str1.4
-                0xe0516b7c      0x20d lib_generic/libgeneric.a(zlib.o)
+                0xe0516b80      0x20d lib_generic/libgeneric.a(zlib.o)
                                 0x214 (size before relaxing)
  .rodata.str1.4
-                0xe0516d89        0x0 board/hi3511v110/libhi3511v110.a(board.o)
+                0xe0516d8d        0x0 board/hi3511v110/libhi3511v110.a(board.o)
                                   0xc (size before relaxing)
- *fill*         0xe0516d89        0x3 00
+ *fill*         0xe0516d8d        0x3 00
  .rodata.str1.4
-                0xe0516d8c       0x80 lib_arm/libarm.a(armlinux.o)
+                0xe0516d90       0x80 lib_arm/libarm.a(armlinux.o)
                                  0xe8 (size before relaxing)
-                0xe0516e0c                . = ALIGN (0x4)
+                0xe0516e10                . = ALIGN (0x4)
 
-.data           0xe0516e0c      0xdc8
+.data           0xe0516e10      0xdc0
  *(.data)
- .data          0xe0516e0c       0x2c lib_arm/libarm.a(board.o)
-                0xe0516e0c                init_sequence
- .data          0xe0516e38        0xa net/libnet.a(net.o)
-                0xe0516e3c                NetBcastAddr
-                0xe0516e38                NetOurNativeVLAN
-                0xe0516e3a                NetOurVLAN
- *fill*         0xe0516e42        0x2 00
- .data          0xe0516e44        0x4 net/libnet.a(tftp.o)
-                0xe0516e44                upload_addr
- .data          0xe0516e48        0xc drivers/libdrivers.a(cfi_flash.o)
- .data          0xe0516e54        0x4 drivers/libdrivers.a(serial_pl011.o)
- .data          0xe0516e58       0x18 common/libcommon.a(main.o)
- .data          0xe0516e70        0x4 common/libcommon.a(cmd_bootm.o)
-                0xe0516e70                load_addr
- .data          0xe0516e74        0x4 common/libcommon.a(cmd_mem.o)
-                0xe0516e74                dp_last_length
- .data          0xe0516e78        0xc common/libcommon.a(devices.o)
-                0xe0516e78                stdio_names
- .data          0xe0516e84      0x414 common/libcommon.a(dlmalloc.o)
- .data          0xe0517298      0x180 common/libcommon.a(env_common.o)
-                0xe0517414                env_get_char
-                0xe0517298                default_environment
- .data          0xe0517418        0xc common/libcommon.a(env_flash.o)
-                0xe051741c                env_name_spec
-                0xe0517418                env_ptr
- .data          0xe0517424      0x40c drivers/hisilicon/libdrv.a(hisilicon-net.o)
-                0xe0517424                h_num
-                0xe0517428                e_num
- .data          0xe0517830        0x4 drivers/hisilicon/libdrv.a(watchdog.o)
- .data          0xe0517834      0x2a0 lib_generic/libgeneric.a(zlib.o)
-                0xe0517854                zlib_version
-                0xe0517834                z_errmsg
- .data          0xe0517ad4      0x100 lib_generic/libgeneric.a(ctype.o)
-                0xe0517ad4                _ctype
-                0xe0517bd4                . = ALIGN (0x4)
+ .data          0xe0516e10       0x2c lib_arm/libarm.a(board.o)
+                0xe0516e10                init_sequence
+ .data          0xe0516e3c        0xa net/libnet.a(net.o)
+                0xe0516e40                NetBcastAddr
+                0xe0516e3c                NetOurNativeVLAN
+                0xe0516e3e                NetOurVLAN
+ *fill*         0xe0516e46        0x2 00
+ .data          0xe0516e48        0x4 net/libnet.a(tftp.o)
+                0xe0516e48                upload_addr
+ .data          0xe0516e4c        0xc drivers/libdrivers.a(cfi_flash.o)
+ .data          0xe0516e58        0x4 drivers/libdrivers.a(serial_pl011.o)
+ .data          0xe0516e5c       0x18 common/libcommon.a(main.o)
+ .data          0xe0516e74        0x4 common/libcommon.a(cmd_bootm.o)
+                0xe0516e74                load_addr
+ .data          0xe0516e78        0x4 common/libcommon.a(cmd_mem.o)
+                0xe0516e78                dp_last_length
+ .data          0xe0516e7c        0xc common/libcommon.a(devices.o)
+                0xe0516e7c                stdio_names
+ .data          0xe0516e88      0x414 common/libcommon.a(dlmalloc.o)
+ .data          0xe051729c      0x178 common/libcommon.a(env_common.o)
+                0xe0517410                env_get_char
+                0xe051729c                default_environment
+ .data          0xe0517414        0xc common/libcommon.a(env_flash.o)
+                0xe0517418                env_name_spec
+                0xe0517414                env_ptr
+ .data          0xe0517420      0x40c drivers/hisilicon/libdrv.a(hisilicon-net.o)
+                0xe0517420                h_num
+                0xe0517424                e_num
+ .data          0xe051782c        0x4 drivers/hisilicon/libdrv.a(watchdog.o)
+ .data          0xe0517830      0x2a0 lib_generic/libgeneric.a(zlib.o)
+                0xe0517850                zlib_version
+                0xe0517830                z_errmsg
+ .data          0xe0517ad0      0x100 lib_generic/libgeneric.a(ctype.o)
+                0xe0517ad0                _ctype
+                0xe0517bd0                . = ALIGN (0x4)
 
 .got
  *(.got)
-                0xe0517bd4                __u_boot_cmd_start = .
+                0xe0517bd0                __u_boot_cmd_start = .
 
-.u_boot_cmd     0xe0517bd4      0x348
+.u_boot_cmd     0xe0517bd0      0x348
  *(.u_boot_cmd)
- .u_boot_cmd    0xe0517bd4       0x1c common/libcommon.a(cmd_bdinfo.o)
-                0xe0517bd4                __u_boot_cmd_bdinfo
- .u_boot_cmd    0xe0517bf0       0x38 common/libcommon.a(cmd_boot.o)
-                0xe0517bf0                __u_boot_cmd_reset
-                0xe0517c0c                __u_boot_cmd_go
- .u_boot_cmd    0xe0517c28       0x1c common/libcommon.a(cmd_bootm.o)
-                0xe0517c28                __u_boot_cmd_bootm
- .u_boot_cmd    0xe0517c44       0x54 common/libcommon.a(cmd_flash.o)
-                0xe0517c7c                __u_boot_cmd_flinfo
-                0xe0517c60                __u_boot_cmd_erase
-                0xe0517c44                __u_boot_cmd_protect
- .u_boot_cmd    0xe0517c98       0x1c common/libcommon.a(cmd_load.o)
-                0xe0517c98                __u_boot_cmd_loadb
- .u_boot_cmd    0xe0517cb4      0x118 common/libcommon.a(cmd_mem.o)
-                0xe0517db0                __u_boot_cmd_md
-                0xe0517d24                __u_boot_cmd_cmp
-                0xe0517d5c                __u_boot_cmd_mw
-                0xe0517cd0                __u_boot_cmd_loop
-                0xe0517cec                __u_boot_cmd_base
-                0xe0517d94                __u_boot_cmd_mm
-                0xe0517d08                __u_boot_cmd_crc32
-                0xe0517d78                __u_boot_cmd_nm
-                0xe0517cb4                __u_boot_cmd_mtest
-                0xe0517d40                __u_boot_cmd_cp
- .u_boot_cmd    0xe0517dcc       0x8c common/libcommon.a(cmd_net.o)
-                0xe0517e20                __u_boot_cmd_tftp
-                0xe0517dcc                __u_boot_cmd_ping
-                0xe0517e04                __u_boot_cmd_rarpboot
-                0xe0517e3c                __u_boot_cmd_bootp
-                0xe0517de8                __u_boot_cmd_dhcp
- .u_boot_cmd    0xe0517e58       0x54 common/libcommon.a(cmd_nvedit.o)
-                0xe0517e58                __u_boot_cmd_saveenv
-                0xe0517e90                __u_boot_cmd_printenv
-                0xe0517e74                __u_boot_cmd_setenv
- .u_boot_cmd    0xe0517eac       0x70 common/libcommon.a(command.o)
-                0xe0517ee4                __u_boot_cmd_echo
-                0xe0517eac                __u_boot_cmd_question_mark
-                0xe0517f00                __u_boot_cmd_version
-                0xe0517ec8                __u_boot_cmd_help
-                0xe0517f1c                __u_boot_cmd_end = .
+ .u_boot_cmd    0xe0517bd0       0x1c common/libcommon.a(cmd_bdinfo.o)
+                0xe0517bd0                __u_boot_cmd_bdinfo
+ .u_boot_cmd    0xe0517bec       0x38 common/libcommon.a(cmd_boot.o)
+                0xe0517bec                __u_boot_cmd_reset
+                0xe0517c08                __u_boot_cmd_go
+ .u_boot_cmd    0xe0517c24       0x1c common/libcommon.a(cmd_bootm.o)
+                0xe0517c24                __u_boot_cmd_bootm
+ .u_boot_cmd    0xe0517c40       0x54 common/libcommon.a(cmd_flash.o)
+                0xe0517c78                __u_boot_cmd_flinfo
+                0xe0517c5c                __u_boot_cmd_erase
+                0xe0517c40                __u_boot_cmd_protect
+ .u_boot_cmd    0xe0517c94       0x1c common/libcommon.a(cmd_load.o)
+                0xe0517c94                __u_boot_cmd_loadb
+ .u_boot_cmd    0xe0517cb0      0x118 common/libcommon.a(cmd_mem.o)
+                0xe0517dac                __u_boot_cmd_md
+                0xe0517d20                __u_boot_cmd_cmp
+                0xe0517d58                __u_boot_cmd_mw
+                0xe0517ccc                __u_boot_cmd_loop
+                0xe0517ce8                __u_boot_cmd_base
+                0xe0517d90                __u_boot_cmd_mm
+                0xe0517d04                __u_boot_cmd_crc32
+                0xe0517d74                __u_boot_cmd_nm
+                0xe0517cb0                __u_boot_cmd_mtest
+                0xe0517d3c                __u_boot_cmd_cp
+ .u_boot_cmd    0xe0517dc8       0x8c common/libcommon.a(cmd_net.o)
+                0xe0517e1c                __u_boot_cmd_tftp
+                0xe0517dc8                __u_boot_cmd_ping
+                0xe0517e00                __u_boot_cmd_rarpboot
+                0xe0517e38                __u_boot_cmd_bootp
+                0xe0517de4                __u_boot_cmd_dhcp
+ .u_boot_cmd    0xe0517e54       0x54 common/libcommon.a(cmd_nvedit.o)
+                0xe0517e54                __u_boot_cmd_saveenv
+                0xe0517e8c                __u_boot_cmd_printenv
+                0xe0517e70                __u_boot_cmd_setenv
+ .u_boot_cmd    0xe0517ea8       0x70 common/libcommon.a(command.o)
+                0xe0517ee0                __u_boot_cmd_echo
+                0xe0517ea8                __u_boot_cmd_question_mark
+                0xe0517efc                __u_boot_cmd_version
+                0xe0517ec4                __u_boot_cmd_help
+                0xe0517f18                __u_boot_cmd_end = .
                 0xe0517f20                . = ALIGN (0x20)
                 0xe0517f20                __bss_start = .
 
